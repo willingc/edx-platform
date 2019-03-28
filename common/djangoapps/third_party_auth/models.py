@@ -332,7 +332,7 @@ class OAuth2ProviderConfig(ProviderConfig):
 
     .. no_pii:
     """
-    KEY_FIELDS=('backend_name',)
+    KEY_FIELDS = ('backend_name',)
     prefix = 'oa2'
     backend_name = models.CharField(
         max_length=50, blank=False, db_index=True,

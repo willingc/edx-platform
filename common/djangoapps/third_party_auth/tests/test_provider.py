@@ -167,7 +167,6 @@ class RegistryTest(testutil.TestCase):
         self.assertIn(dummy_provider, provider.Registry._enabled_providers())
         self.assertIn(dummy_provider, provider.Registry.get_enabled_by_backend_name('dummy'))
 
-
     def test_oauth2_enabled_only_for_supplied_backend(self):
         """
         Test to ensure that Registry.get_enabled_by_backend_name doesn't return OAuth2 providers with incorrect
