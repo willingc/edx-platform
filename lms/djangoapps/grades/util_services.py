@@ -3,8 +3,8 @@
 
 from .grade_utils import are_grades_frozen
 
-class GradesUtilService(object):
 
+class GradesUtilService(object):
 
     def __init__(self, **kwargs):
         super(GradesUtilService, self).__init__()
