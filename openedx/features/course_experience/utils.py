@@ -173,7 +173,7 @@ def get_resume_block(block):
     Gets the deepest block marked as 'resume_block'.
 
     """
-    if not block['resume_block']:
+    if block.get('authorization_denial_reason') or not block['resume_block']:
         return None
     if not block.get('children'):
         return block
